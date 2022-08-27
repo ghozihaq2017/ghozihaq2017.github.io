@@ -580,6 +580,12 @@ section.footer {
 
 /* Responsive Portofolio */
 @media screen and (max-width: 968px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+
+@media screen and (max-width: 968px) {
   nav {
     width: 100vw;
     bottom: 0;
