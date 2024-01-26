@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Required meta tags -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,7 +10,7 @@
     <title>Portofolio | Ghozi IH</title>
 
     <!-- Stlying CSS Lokal -->
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/style2.css" />
 
     <!-- Goggle Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -18,22 +19,29 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <!-- Icon Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Title Icon -->
+    <link rel="icon" type="image/x-icon" href="./assets/image/poto-ghozi/poto-formal-crop.png" />
   </head>
-
-  <!-- Icon Font Awesome -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
-  <body>
+  <body class="conceal">
+    <!-- Loading -->
+    <div class="loader" id="loader">
+      <div class="loading">
+        <img src="./assets/image/other/loader.svg" alt="" />
+      </div>
+    </div>
     <!-- Mulai Navbar -->
     <nav class="navbar">
-      <a href="" class="logo">
+      <a href="#" class="logo">
         <img
-          src="assets/image/poto-ghozi/poto-circle.png"
+          src="assets/image/poto-ghozi/poto-formal.jpg"
           alt="logo"
           style="width: 40px; height: 40px"
         />
@@ -44,36 +52,46 @@
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#project">Project</a></li>
+        <li><a href="#certification">Certification</a></li>
       </ul>
-      <div class="menu-toggle">
-        <input type="checkbox" />
-        <span>aa</span>
-        <span>abb</span>
-        <span>cc</span>
+      <button class="hamburger">
+        <div class="bar"></div>
+      </button>
+    </nav>
+    <nav class="mobile-nav">
+      <div class="list-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#project">Project</a>
+        <a href="#certification">Certification</a>
+        <a href="#footer">Contact</a>
       </div>
     </nav>
 
     <!-- Mulai Home Section -->
     <section class="home" id="home">
       <div id="particles-js"></div>
-      <div class="content">
-        <h2>
-          Hello, I'm<br />
-          Ghozi Izzulhaq
-        </h2>
-        <p>i am into <span class="typing-text"></span></p>
-        <div class="tombol-email-cv">
-          <a href="mailto:ghozihaq2017@gmail.com" class="email">Email Me</a>
-          <a href="#" class="cv">Download CV</a>
+      <div class="container-home">
+        <div class="content">
+          <h2>
+            Hello, I'm<br />
+            Ghozi Izzulhaq
+          </h2>
+          <p>i am into <span class="typing-text"></span></p>
+          <div class="tombol-email-cv">
+            <a href="mailto:ghozihaq2017@gmail.com" class="email">Email Me</a>
+            <a href="#" class="cv">Download CV</a>
+          </div>
         </div>
-      </div>
-      <div class="foto">
-        <img
-          data-tilt
-          data-tilt-full-page-listening
-          src="./assets/image/poto-ghozi/photo.jpg"
-          alt="Ghozi Izzulhaq"
-        />
+        <div class="foto">
+          <img
+            data-tilt
+            data-tilt-full-page-listening
+            src="./assets/image/poto-ghozi/poto-home1.jpg"
+            alt="Ghozi Izzulhaq"
+          />
+        </div>
       </div>
     </section>
 
@@ -82,22 +100,17 @@
       <h2 class="heading"><i class="fa-solid fa-user-large"></i> About Me</h2>
       <div class="about-me">
         <div class="foto">
-          <img
-            data-tilt
-            src="./assets/image/poto-ghozi/foto-hero.jpeg"
-            alt="Ghozi"
-          />
+          <img data-tilt src="./assets/image/poto-ghozi/poto-hero1.png" alt="Ghozi" />
         </div>
         <div class="about-desc">
           <p>
-            Bonjour, it's me, Ghozi Izzulhaq. Today, I would like to share with
-            you the latest update on my CV & Portofolio. This includes all my
-            works when I am studying Web technology. I'm so glad because
-            eventually I can share this with all of you. And now I am open to
-            new opportunities to gain new experience and take up new challenges.
-            Thank you so much!
+            Bonjour, it's me, Ghozi Izzulhaq. Today, I would like to share with you the latest
+            update on my CV & Portofolio. This includes all my works when I am studying Web
+            technology. I'm so glad because eventually I can share this with all of you. And now I
+            am open to new opportunities to gain new experience and take up new challenges. Thank
+            you so much!
           </p>
-          <a href="" class="cv"><span>Download CV</span></a>
+          <a href="#" class="cv"><span>Download CV</span></a>
         </div>
       </div>
     </section>
@@ -133,6 +146,12 @@
           </div>
           <div data-tilt class="bar">
             <div class="info">
+              <img src="./assets/image/logo/tailwind.png" alt="Tailwind" />
+              <span>Tailwind</span>
+            </div>
+          </div>
+          <div data-tilt class="bar">
+            <div class="info">
               <img src="./assets/image/logo/nodejs.png" alt="Nodejs" />
               <span>NodeJS</span>
             </div>
@@ -145,14 +164,38 @@
           </div>
           <div data-tilt class="bar">
             <div class="info">
-              <img src="./assets/image/logo/github2.png" alt="Github" />
-              <span>Github</span>
+              <img src="./assets/image/logo/vue.png" alt="Vue" />
+              <span>VueJS</span>
             </div>
           </div>
           <div data-tilt class="bar">
             <div class="info">
-              <img src="./assets/image/logo/photoshop.png" alt="Photoshop" />
-              <span>Photoshop</span>
+              <img src="./assets/image/logo/git.png" alt="Git" />
+              <span>Git</span>
+            </div>
+          </div>
+          <div data-tilt class="bar">
+            <div class="info">
+              <img src="./assets/image/logo/figma.png" alt="Figma" />
+              <span>Figma</span>
+            </div>
+          </div>
+          <div data-tilt class="bar">
+            <div class="info">
+              <img src="./assets/image/logo/c.png" alt="C" />
+              <span>C</span>
+            </div>
+          </div>
+          <div data-tilt class="bar">
+            <div class="info">
+              <img src="./assets/image/logo/python.png" alt="Python" />
+              <span>Python</span>
+            </div>
+          </div>
+          <div data-tilt class="bar">
+            <div class="info">
+              <img src="./assets/image/logo/arduino.png" alt="Arduino" />
+              <span>Arduino</span>
             </div>
           </div>
         </div>
@@ -165,20 +208,15 @@
       <div class="container-project">
         <!-- Project 1 -->
         <div class="box">
-          <img src="./assets/image/project/project-1.png" alt="Secondhand" />
+          <img src="./assets/image/project/project-1.png" alt="Secondhand" width="200px" />
           <div class="content">
             <div class="tag">
               <h3>Secondhand App</h3>
             </div>
             <div class="desc">
-              <p>
-                This simple e-commerce application constructed with React Js.
-              </p>
+              <p>This simple e-commerce application constructed with React Js.</p>
               <div class="buttons">
-                <a
-                  href="http://secondhand-k3.herokuapp.com/login"
-                  class="btn"
-                  target="_blank"
+                <a href="http://secondhand-k3.herokuapp.com/login" class="btn" target="_blank"
                   ><i class="fa-solid fa-eye"></i> View</a
                 >
                 <a
@@ -193,7 +231,7 @@
         </div>
         <!-- Project 2 -->
         <div class="box">
-          <img src="./assets/image/project/project-2.png" alt="Portofolio" />
+          <img src="./assets/image/project/project-2.png" alt="Portofolio" width="200px" />
           <div class="content">
             <div class="tag">
               <h3>Portofolio</h3>
@@ -201,10 +239,53 @@
             <div class="desc">
               <p>Personal portfolio based on HTML, CSS, and javascript.</p>
               <div class="buttons">
+                <a href="http://secondhand-k3.herokuapp.com/login" class="btn" target="_blank"
+                  ><i class="fa-solid fa-eye"></i> View</a
+                >
                 <a
-                  href="http://secondhand-k3.herokuapp.com/login"
+                  href="https://github.com/ghozihaq2017/Secondhand-E-Commerce-App"
                   class="btn"
                   target="_blank"
+                  ><i class="fa-solid fa-code"></i> Code</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Project 3 -->
+        <div class="box">
+          <img src="./assets/image/project/project-2.png" alt="Portofolio" width="200px" />
+          <div class="content">
+            <div class="tag">
+              <h3>Portofolio</h3>
+            </div>
+            <div class="desc">
+              <p>Personal portfolio based on HTML, CSS, and javascript.</p>
+              <div class="buttons">
+                <a href="http://secondhand-k3.herokuapp.com/login" class="btn" target="_blank"
+                  ><i class="fa-solid fa-eye"></i> View</a
+                >
+                <a
+                  href="https://github.com/ghozihaq2017/Secondhand-E-Commerce-App"
+                  class="btn"
+                  target="_blank"
+                  ><i class="fa-solid fa-code"></i> Code</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Project 4 -->
+        <div class="box">
+          <img src="./assets/image/project/project-2.png" alt="Portofolio" width="200px" />
+          <div class="content">
+            <div class="tag">
+              <h3>Portofolio</h3>
+            </div>
+            <div class="desc">
+              <p>Personal portfolio based on HTML, CSS, and javascript.</p>
+              <div class="buttons">
+                <a href="http://secondhand-k3.herokuapp.com/login" class="btn" target="_blank"
                   ><i class="fa-solid fa-eye"></i> View</a
                 >
                 <a
@@ -232,24 +313,147 @@
       </div>
     </section>
 
+    <!-- Mulai Bagian Certification -->
+    <section class="certification" id="certification">
+      <h2 class="heading"><i class="fa-solid fa-medal"></i> Certification</h2>
+      <div class="container-certification">
+        <div class="card">
+          <div class="box">
+            <img src="./assets/image/sertif/sertif_coreini.png" alt="Sertif Frontend Internship" />
+          </div>
+          <p>Frontend Project Based Internship x Core Initiative - Rakamin</p>
+        </div>
+        <div class="card">
+          <div class="box">
+            <img
+              src="./assets/image/sertif/Studi Independen_Cert_Ghozi Izzulhaq (2)_page-0001.png"
+              alt="Sertif Frontend Javascript"
+            />
+          </div>
+          <p>Frontend Javascript - Binar Academy x MSIB</p>
+        </div>
+        <div class="card">
+          <div class="box">
+            <img
+              src="./assets/image/sertif/Fresh Graduate Academy 2023_Cert_Ghozi Izzulhaq_page-0001.png"
+              alt="Sertif UI/UX"
+            />
+          </div>
+          <p>UI/UX Research & Design - Binar Academy x Digitalent</p>
+        </div>
+        <div class="card">
+          <div class="box">
+            <img
+              src="./assets/image/sertif/Sertifikat_GHOZI IZZULHAQ_UI_UX Designer (1)-1.png"
+              alt="Sertif UI/UX"
+            />
+          </div>
+          <p>UI/UX Research & Design - Binar Academy x Digitalent</p>
+        </div>
+        <div class="card">
+          <div class="box">
+            <img
+              src="./assets/image/sertif/ghozi-izzulhaq-certificate-attendance-sefc23-1.png"
+              alt="Sertif intro to software engineering
+            "
+            />
+          </div>
+          <p>Intro to Software Engineering - RevoU</p>
+        </div>
+        <div class="card">
+          <div class="box">
+            <img src="./assets/image/sertif/freecodecamp-javascript.png" alt="Sertif Javascript" />
+          </div>
+          <p>Javascript Algorithms and Data Structures - Freecodecamp</p>
+        </div>
+        <div class="card">
+          <div class="box">
+            <img
+              src="./assets/image/sertif/freecodecamp-responsive.png"
+              alt="Sertif Responsive Web
+            "
+            />
+          </div>
+          <p>Responsive Web Design - Freecodecamp</p>
+        </div>
+        <div class="card">
+          <div class="box">
+            <img
+              src="./assets/image/sertif/serti_web_programming.png"
+              alt="Sertif web programming
+            "
+            />
+          </div>
+          <p>Web Programming Fundamentals - Camp404</p>
+        </div>
+        <div class="card">
+          <div class="box">
+            <img
+              src="./assets/image/sertif/react js-1.png"
+              alt="Sertif React JS
+            "
+            />
+          </div>
+          <p>React JS Web Programming - Camp404</p>
+        </div>
+        <div class="card">
+          <div class="box">
+            <img
+              src="./assets/image/sertif/sertif_dasar_js.png"
+              alt="Sertif dasar JS
+            "
+            />
+          </div>
+          <p>Belajar Dasar Pemrograman Javascript - Dicoding</p>
+        </div>
+        <div class="card">
+          <div class="box">
+            <img
+              src="./assets/image/sertif/sertif_dasar_c.png"
+              alt="Sertif dasar C
+            "
+            />
+          </div>
+          <p>Memulai Perograman Dengan C - Dicoding</p>
+        </div>
+        <div class="card">
+          <div class="box">
+            <img
+              src="./assets/image/sertif/sertif_dasar_program_web.png"
+              alt="Sertif dasar pemrograman web
+            "
+            />
+          </div>
+          <p>Belajar Dasar Pemrograman Web - Dicoding</p>
+        </div>
+        <div class="card">
+          <div class="box">
+            <img
+              src="./assets/image/sertif/sertif_git.png"
+              alt="Sertif dasar Git
+            "
+            />
+          </div>
+          <p>Belajar Dasar Git dengan Github - Dicoding</p>
+        </div>
+      </div>
+    </section>
+
     <!-- Mulai Bagian Footer -->
     <section class="footer" id="footer">
       <div class="container-footer">
         <div class="box left">
           <h3>Ghozi's Portofolio</h3>
           <p>
-            Thank you for visiting my personal portfolio website. Connect with
-            me over socials. <br />
+            Thank you for visiting my personal portfolio website. Connect with me over socials.
+            <br />
           </p>
         </div>
         <div class="box right">
           <h3>Contact info</h3>
           <p><i class="fa-solid fa-phone-flip"></i> +62 852-1194-0014</p>
           <p><i class="fa-solid fa-envelope"></i> ghozihaq2017@gmail.com</p>
-          <p>
-            <i class="fa-solid fa-map-location-dot"></i> Purwakarta, Jawa Barat.
-            Indonesia
-          </p>
+          <p><i class="fa-solid fa-map-location-dot"></i> Purwakarta, Jawa Barat. Indonesia</p>
           <div class="share">
             <a
               href="https://github.com/ghozihaq2017"
@@ -270,7 +474,7 @@
               target="_blank"
             ></a>
             <a
-              href="https://www.linkedin.com/in/ghozi-izzulhaq"
+              href="https://www.linkedin.com/in/ghozi-izzulhaqq"
               class="fa-brands fa-linkedin"
               aria-label="Linkedin"
               target="_blank"
@@ -278,18 +482,11 @@
           </div>
         </div>
       </div>
-      <h1 class="credit">
-        Made by <a href="https://github.com/ghozihaq2017"> Ghozi Izzulhaq</a>
-      </h1>
+      <h1 class="credit">Made by <a href="https://github.com/ghozihaq2017"> Ghozi Izzulhaq</a></h1>
     </section>
 
     <!-- Scroll Up -->
-    <a
-      href="#home"
-      aria-label="ScrollTop"
-      class="fas fa-arrow-up"
-      id="scroll-top"
-    ></a>
+    <a href="#home" aria-label="ScrollTop" class="fas fa-arrow-up" id="scroll-top"></a>
 
     <!-- Particle Js -->
     <script src="./assets/js/particles.min.js"></script>
