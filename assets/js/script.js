@@ -1,10 +1,10 @@
 // <!-- Typed js Effect -->
 var typed = new Typed('.typing-text', {
-  strings: ['web development', 'frontend javascript'],
+  strings: ['Fullstack Web Dev', 'Frontend Javascript', 'Backend Javascript'],
   loop: true,
   typeSpeed: 50,
   backSpeed: 25,
-  backDelay: 1000,
+  backDelay: 1000
 });
 
 // MEMBUAT HAMBURGER BUTTON DAN NAVBAR SAAT RESPONSIVE
@@ -23,7 +23,7 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     e.preventDefault();
 
     document.querySelector(this.getAttribute('href')).scrollIntoView({
-      behavior: 'smooth',
+      behavior: 'smooth'
     });
   });
 });
